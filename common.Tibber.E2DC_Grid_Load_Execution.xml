@@ -1,0 +1,528 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="interval" id="REMOTE_CONTROLL">REMOTE_CONTROLL</variable>
+  </variables>
+  <block type="comment" id="#mdwyC7uD4bkFw4.L-e[" x="38" y="-713">
+    <field name="COMMENT">E3DC Batt Load script</field>
+    <next>
+      <block type="on" id="m^e:2tH}CAmJs`_BKck=">
+        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+        <field name="CONDITION">ne</field>
+        <field name="ACK_CONDITION"></field>
+        <statement name="STATEMENT">
+          <block type="controls_if" id=".dRdby|H1L7}t+*y@MYA">
+            <mutation elseif="3" else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_operation" id="^D37UMq!.l%4?+/ksJ(6">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="_QlBa!QCq^QipN.qY(9N">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="convert_tonumber" id="K0@Q+k~*[5$*Jm`YzpxC">
+                        <value name="VALUE">
+                          <block type="get_value" id="lRLXPD1(P}]fwdCJrV!U">
+                            <field name="ATTR">val</field>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="x51p_@c2MG8Qk1p).NF|">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="nZz9@1/CRk3DYby?y)L,">
+                    <field name="OP">NEQ</field>
+                    <value name="A">
+                      <block type="convert_tonumber" id="f!McJ6oswWa^Ou#+5.n#">
+                        <value name="VALUE">
+                          <block type="get_value" id="oNUJ9u]x)mi2.1hp272q">
+                            <field name="ATTR">val</field>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed_last_val</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="convert_tonumber" id="N%}.@?$c)z~f7({DNqzW">
+                        <value name="VALUE">
+                          <block type="get_value" id=")*t$W^V+o6g@_`~e3%!}">
+                            <field name="ATTR">val</field>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="comment" id="qD(qEuV(K*hdTNQ2.9[3">
+                <field name="COMMENT">Loading should be stopped now, but was still in progress</field>
+                <next>
+                  <block type="debug" id="E)A}BgWHPN%ScLx$Bk*r">
+                    <field name="Severity">debug</field>
+                    <value name="TEXT">
+                      <shadow type="text" id="Y|.UR#mUSKAWz25Or`zP">
+                        <field name="TEXT">Switched to 0 Load - Stopping now &amp; reset Local execution</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="timeouts_clearinterval" id="+cut0v-lA/ezCQ_{R.lr">
+                        <field name="NAME">REMOTE_CONTROLL</field>
+                        <next>
+                          <block type="update" id="hPl;/N=hlQ:Y!D]$,R3=">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                            <field name="OID">e3dc-rscp.0.EMS.SET_POWER_VALUE</field>
+                            <field name="WITH_DELAY">FALSE</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="Hl6bYms3.36gkh{G{CP:">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="update" id="k{hdD|/LP#-L(M;#jl!K">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed</field>
+                                <field name="WITH_DELAY">FALSE</field>
+                                <value name="VALUE">
+                                  <block type="logic_boolean" id="kPTOn*]Z#:x[:Xn(a0B!">
+                                    <field name="BOOL">FALSE</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="update" id="+KY1MXw|_L5pWxtZ9%av">
+                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed_last_val</field>
+                                    <field name="WITH_DELAY">FALSE</field>
+                                    <value name="VALUE">
+                                      <block type="math_number" id=",CeK()@]~[2f6M2P+E;r">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="update" id="a@AInb`?/db-,?QXb@S1">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                        <field name="OID">e3dc-rscp.0.EMS.SET_POWER_MODE</field>
+                                        <field name="WITH_DELAY">FALSE</field>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="io6opl]D4I^A%9)s(JcD">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_operation" id="w@.mG=h!+|5eFNAF,lzM">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="n^(H./vaZnF:4sdo1w~~">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="convert_tonumber" id="GXHbi?,}x#U=p2o2f~sK">
+                        <value name="VALUE">
+                          <block type="get_value" id="pXn+af~$}}i;_A$0#n($">
+                            <field name="ATTR">val</field>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="^Y#(Tv=_{CX6uNs%8nSZ">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="xt9p-(h^k:zF!f+P~{fB">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="get_value" id="d3Q2:^oxCk_p9^v~9P|~">
+                        <field name="ATTR">val</field>
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="logic_boolean" id="H]!ELY-U2AJ^DY=~st?K">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="comment" id="k~J!{EG{GQouKz/SH4XJ">
+                <field name="COMMENT">No load defined</field>
+                <next>
+                  <block type="debug" id=";G|CCwose1*u.WB`t/z!">
+                    <field name="Severity">debug</field>
+                    <value name="TEXT">
+                      <shadow type="text" id="oAL])0+|*2[d8kAtams%">
+                        <field name="TEXT">Nothing to do</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <value name="IF2">
+              <block type="logic_compare" id="iu%[B[DYX;u#VLY5j5Xy">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="get_value" id="vpyXPF2(HYawY+FseShK">
+                    <field name="ATTR">val</field>
+                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="K?EiqySA($8VO}[zj?PF">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO2">
+              <block type="comment" id="6G%{gj0DDX:|!lo#7qM1">
+                <field name="COMMENT">Loading was already done</field>
+                <next>
+                  <block type="debug" id="]yRzjJ2;]c,cgs=C!;CD">
+                    <field name="Severity">debug</field>
+                    <value name="TEXT">
+                      <shadow type="text" id="f}yVQ`e/LAbI.ecReSYO">
+                        <field name="TEXT">Already executed (no repeat)</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <value name="IF3">
+              <block type="logic_compare" id="dBi|myP8Pwd3wHD028wo">
+                <field name="OP">GTE</field>
+                <value name="A">
+                  <block type="convert_tonumber" id="n+rBFaR7CC_NV]m%T{^0">
+                    <value name="VALUE">
+                      <block type="get_value" id="*q?5$ywcv6|~pAA9Sx!0">
+                        <field name="ATTR">val</field>
+                        <field name="OID">e3dc-rscp.0.EMS.BAT_SOC</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="convert_tonumber" id="xz{`0zl38$(5#=0k^(KF">
+                    <value name="VALUE">
+                      <block type="get_value" id="w8~S!ranxG0nbZHvPOSN">
+                        <field name="ATTR">val</field>
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO3">
+              <block type="comment" id="-wrnFW./yr.N,[d(u_3]">
+                <field name="COMMENT">SOC Sufficient</field>
+                <next>
+                  <block type="debug" id="3Q2yT!tI*0Z!UF|A(|Ww">
+                    <field name="Severity">debug</field>
+                    <value name="TEXT">
+                      <shadow type="text" id="w$Afa!Q7.U=3;Thyms-^">
+                        <field name="TEXT">More SOC availabel than requested</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="comment" id="(*37O$drW/p@c6;Vo$k|">
+                <field name="COMMENT">Loading now, check if it was already executed</field>
+                <next>
+                  <block type="controls_if" id="8oh@%9H9JG+WN7Y+J^(i">
+                    <value name="IF0">
+                      <block type="logic_compare" id="w8f(-GmHHK4CqN[9LOFH">
+                        <field name="OP">NEQ</field>
+                        <value name="A">
+                          <block type="convert_tonumber" id="5N:s#oI;2)uk*=~dKJaE">
+                            <value name="VALUE">
+                              <block type="get_value" id="8=zc85yHLlTc-HJXrd(C">
+                                <field name="ATTR">val</field>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="convert_tonumber" id="zip$?v#s6-uJ2kMulJqf">
+                            <value name="VALUE">
+                              <block type="get_value" id="/KOv^5^v,~rGCnJPX.^K">
+                                <field name="ATTR">val</field>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed_last_val</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="comment" id="ga/jXrch!!]No-1_K(nj">
+                        <field name="COMMENT">Loading was not started... starting now</field>
+                        <next>
+                          <block type="debug" id="%%8kjoOBkRw!)#[kg|}?">
+                            <field name="Severity">debug</field>
+                            <value name="TEXT">
+                              <shadow type="text" id="yr0d-Ci?74CtZwu0SP.G">
+                                <field name="TEXT">Starting to Load now</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="update" id="K.]]N2[*%dzlGvh?;-S/">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed_last_val</field>
+                                <field name="WITH_DELAY">FALSE</field>
+                                <value name="VALUE">
+                                  <block type="convert_tonumber" id="_L88zY`hx[t*HW;cLJX`">
+                                    <value name="VALUE">
+                                      <block type="get_value" id="Ai9uwC+cv08$=:Q@v/y@">
+                                        <field name="ATTR">val</field>
+                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="control" id="Rxli|v-F)52q}z3Fw[@k">
+                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                    <field name="OID">e3dc-rscp.0.EMS.SET_POWER_VALUE</field>
+                                    <field name="WITH_DELAY">FALSE</field>
+                                    <value name="VALUE">
+                                      <block type="math_number" id=":=c!KZt^ej1}G#nkW`se">
+                                        <field name="NUM">12000</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="update" id="p%O[UL0:m{p=Vo]AuxWV">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed</field>
+                                        <field name="WITH_DELAY">FALSE</field>
+                                        <value name="VALUE">
+                                          <block type="logic_boolean" id="qja3BuH[8:Fe(`0OgfBJ">
+                                            <field name="BOOL">TRUE</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="timeouts_setinterval" id="+^,!S*686/2yr,LWZu$K">
+                                            <field name="NAME">REMOTE_CONTROLL</field>
+                                            <field name="INTERVAL">5</field>
+                                            <field name="UNIT">sec</field>
+                                            <statement name="STATEMENT">
+                                              <block type="control" id=".Z_MmH{9Wre{zLdIIeTR">
+                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                <field name="OID">e3dc-rscp.0.EMS.SET_POWER_MODE</field>
+                                                <field name="WITH_DELAY">FALSE</field>
+                                                <value name="VALUE">
+                                                  <block type="math_number" id="jO7@d#BtS,GW}^L8}}On">
+                                                    <field name="NUM">4</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="comment" id="paiMbm/w%+F6ZEl4#8=^">
+                        <field name="COMMENT">Loading ongoing</field>
+                        <next>
+                          <block type="debug" id="}R5ib/.0WM8rz)9ebuI]">
+                            <field name="Severity">debug</field>
+                            <value name="TEXT">
+                              <shadow type="text" id="QUf@Qi!:JiIQC_QBVF1_">
+                                <field name="TEXT">Still loading</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+  <block type="comment" id="-P5LfCZZt@tnpm6W4W+X" x="888" y="463">
+    <field name="COMMENT">Stop E3DC Batt Load once SOC is reached</field>
+    <next>
+      <block type="on" id="cJoFuUfH#E.+=nMssVlV">
+        <field name="OID">e3dc-rscp.0.EMS.BAT_SOC</field>
+        <field name="CONDITION">ne</field>
+        <field name="ACK_CONDITION"></field>
+        <statement name="STATEMENT">
+          <block type="controls_if" id="TF[5slv5z^8K#?xDS`v$">
+            <value name="IF0">
+              <block type="logic_compare" id="p/uBbZDQRccL1l,yM,-g">
+                <field name="OP">GTE</field>
+                <value name="A">
+                  <block type="convert_tonumber" id="TYYge_MRW*V=[,U~[Qp$">
+                    <value name="VALUE">
+                      <block type="get_value" id="P`bYHXt]%ukoYv8$^k7+">
+                        <field name="ATTR">val</field>
+                        <field name="OID">e3dc-rscp.0.EMS.BAT_SOC</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="convert_tonumber" id="F-PD*b5{a}t.NF0U!1!b">
+                    <value name="VALUE">
+                      <block type="get_value" id="Y`y)(Jv{nw4^[jqRX,do">
+                        <field name="ATTR">val</field>
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="debug" id="o2q7qV3q7UN[rlGykd9r">
+                <field name="Severity">debug</field>
+                <value name="TEXT">
+                  <shadow type="text" id="x+^,Of?Jllp[1?+L%bhm">
+                    <field name="TEXT">Loading done, stopping now</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="timeouts_clearinterval" id="iUd2UOkMa5T2O0d#]hC/">
+                    <field name="NAME">REMOTE_CONTROLL</field>
+                    <next>
+                      <block type="update" id="`)%xcnwci[YJa=iH:Da;">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                        <field name="OID">e3dc-rscp.0.EMS.SET_POWER_MODE</field>
+                        <field name="WITH_DELAY">FALSE</field>
+                        <value name="VALUE">
+                          <block type="math_number" id="(?WWem34[kW88%ry}RrY">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="update" id="vaK|a:I!^2A]_rx6c5YD">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                            <field name="OID">e3dc-rscp.0.EMS.SET_POWER_VALUE</field>
+                            <field name="WITH_DELAY">FALSE</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="]w^|[m(ooo+v:z))^X4R">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+  <block type="comment" id="uKjYvOrP)%a1nHGCnbbl" x="188" y="613">
+    <field name="COMMENT">Stop E3DC Load 2 sec before full hour</field>
+    <next>
+      <block type="schedule" id="19{MWx@KJjA]s][zB=w}">
+        <field name="SCHEDULE">58 59 * * * *</field>
+        <statement name="STATEMENT">
+          <block type="timeouts_clearinterval" id="^rQ,mM-Tb;S6Q:|X6cTQ">
+            <field name="NAME">REMOTE_CONTROLL</field>
+            <next>
+              <block type="update" id="mt/Ni+Z1|VJMiH@e:hee">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed</field>
+                <field name="WITH_DELAY">FALSE</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="eB(wMU0gtYS20GL-gAP5">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="update" id="k{%mXy7-t#1CJeV*]SzV">
+                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load_executed_last_val</field>
+                    <field name="WITH_DELAY">FALSE</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="%QQFhoV2(/,H~0,wq7nB">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="update" id="a*OfTv/G4Vx~NO/dbKJL">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                        <field name="OID">e3dc-rscp.0.EMS.SET_POWER_MODE</field>
+                        <field name="WITH_DELAY">FALSE</field>
+                        <value name="VALUE">
+                          <block type="math_number" id="+(5wbp!=40mTWTw%WeJb">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="update" id=";`D@EXSADTng,Kn,cVl;">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                            <field name="OID">e3dc-rscp.0.EMS.SET_POWER_VALUE</field>
+                            <field name="WITH_DELAY">FALSE</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="/{~jNG4yyAxcb:6;zSnj">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
