@@ -13,5 +13,12 @@ What did I use:
   3. tibberlink Adapter in IOBroker
   4. E3/DC RSCP Adapter in IOBroker
   5. javascript Adapter in IOBroker
-  6. iobroker_E3DC Menue and loading scripts by ArnoD15 https://github.com/ArnoD15/iobroker_E3DC
+  6. influxdb + influxdb Adapter in IOBroker
+  7. iobroker_E3DC Menue and loading scripts by ArnoD15 https://github.com/ArnoD15/iobroker_E3DC
   
+
+Order for setup:
+Install all modules mentiond above + Ggrafana and do the basic confg.
+iobroker_E3DC is optional at this point.
+
+In order to get the costs loaded add the following script to 
