@@ -50,3 +50,6 @@ Order for setup:
    But you need to update the URL for Grafana used...Extracktz it following the below image from Grafana and remove the time frame defined for the Today and tomorrow view update the URL's:
    ![grafik](https://github.com/user-attachments/assets/67cc3282-977e-41ad-88f5-b143adc6ca15)
 
+   ![grafik](https://github.com/user-attachments/assets/67877543-6930-4016-b914-28d486788197)
+
+
