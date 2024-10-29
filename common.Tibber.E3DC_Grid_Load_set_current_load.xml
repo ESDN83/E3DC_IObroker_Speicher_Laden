@@ -1,0 +1,1390 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="on" id="/q$vI3!2;LF%$xjB()Gg" x="-937" y="-962">
+    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_00-01</field>
+    <field name="CONDITION">ne</field>
+    <field name="ACK_CONDITION">false</field>
+    <statement name="STATEMENT">
+      <block type="controls_if" id="~c/3O{.060#SYYb}qxg~">
+        <value name="IF0">
+          <block type="time_compare" id="*487]q2jBvYseC%Cmnl`">
+            <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+            <field name="OPTION">between</field>
+            <field name="START_TIME">00:00</field>
+            <field name="END_TIME">01:00</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="update" id="x2Tgf}r6@6P8Sfs_q(;v">
+            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+            <field name="WITH_DELAY">FALSE</field>
+            <value name="VALUE">
+              <block type="convert_tonumber" id="*XY*nmkjmZkqz}=+|Xtu">
+                <value name="VALUE">
+                  <block type="get_value" id="=%8Q%u?|GnEz0.|24,@r">
+                    <field name="ATTR">val</field>
+                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_00-01</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <next>
+      <block type="on" id="u),bjTz@dEjGBa`KXzde">
+        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_01-02</field>
+        <field name="CONDITION">ne</field>
+        <field name="ACK_CONDITION">false</field>
+        <statement name="STATEMENT">
+          <block type="controls_if" id="0_MlLc1?Ti4gEW51:zA?">
+            <value name="IF0">
+              <block type="time_compare" id="2,Go(IlVkO,VC9[Q+UOW">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                <field name="OPTION">between</field>
+                <field name="START_TIME">01:00</field>
+                <field name="END_TIME">02:00</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="update" id="n*CSz}H@wibL85U6|TgG">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                <field name="WITH_DELAY">FALSE</field>
+                <value name="VALUE">
+                  <block type="convert_tonumber" id="~De=2(J!Wo/wJkC8GYIi">
+                    <value name="VALUE">
+                      <block type="get_value" id="l361]ch8;To+py-~H.N;">
+                        <field name="ATTR">val</field>
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_01-02</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="on" id="AXFm$3ZJ0VWHoZd+H14(">
+            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_02-03</field>
+            <field name="CONDITION">ne</field>
+            <field name="ACK_CONDITION">false</field>
+            <statement name="STATEMENT">
+              <block type="controls_if" id="PFuk/qCn+Vifr.%]JR;V">
+                <value name="IF0">
+                  <block type="time_compare" id="VdIEdlX.Csp^I_:^-#6,">
+                    <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                    <field name="OPTION">between</field>
+                    <field name="START_TIME">02:00</field>
+                    <field name="END_TIME">03:00</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="update" id="2eaTXB$gLatT$]!vt+!x">
+                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                    <field name="WITH_DELAY">FALSE</field>
+                    <value name="VALUE">
+                      <block type="convert_tonumber" id="!b6H5T.?V)Q]vn1=X5ec">
+                        <value name="VALUE">
+                          <block type="get_value" id="E{g+-RGJVa?ElETFXl[O">
+                            <field name="ATTR">val</field>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_02-03</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <next>
+              <block type="on" id="hVv/QBqYL6z=X=wj$y=7">
+                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_03-04</field>
+                <field name="CONDITION">ne</field>
+                <field name="ACK_CONDITION">false</field>
+                <statement name="STATEMENT">
+                  <block type="controls_if" id=",ZW!XK)u;8MFmc+~%Vxm">
+                    <value name="IF0">
+                      <block type="time_compare" id="iWQ%$BXH.()AbcOM1a**">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                        <field name="OPTION">between</field>
+                        <field name="START_TIME">03:00</field>
+                        <field name="END_TIME">04:00</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="update" id="TU?tuR|pNQsph?yGiBZ$">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                        <field name="WITH_DELAY">FALSE</field>
+                        <value name="VALUE">
+                          <block type="convert_tonumber" id="=NRovsa$ejHjjBj^m!DW">
+                            <value name="VALUE">
+                              <block type="get_value" id="o2Df6)LIt,i`Z.)XjIC)">
+                                <field name="ATTR">val</field>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_03-04</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <next>
+                  <block type="on" id="t|c[fae~jez%E%QXfz$+">
+                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_04-05</field>
+                    <field name="CONDITION">ne</field>
+                    <field name="ACK_CONDITION">false</field>
+                    <statement name="STATEMENT">
+                      <block type="controls_if" id="G)adlzg4V+U*STcPVe*-">
+                        <value name="IF0">
+                          <block type="time_compare" id="T(paL/~,%**KBx_Hw}Rt">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                            <field name="OPTION">between</field>
+                            <field name="START_TIME">04:00</field>
+                            <field name="END_TIME">05:00</field>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="update" id="IWgc=xyGuTB[ZLuF?L/5">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                            <field name="WITH_DELAY">FALSE</field>
+                            <value name="VALUE">
+                              <block type="convert_tonumber" id="}v)L$vG]ym%cNhxwjXA-">
+                                <value name="VALUE">
+                                  <block type="get_value" id="7H=[swRe*e/vl]!2OrIR">
+                                    <field name="ATTR">val</field>
+                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_04-05</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="on" id="YgL/5x1X=:Dt{krkW~{2">
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_05-06</field>
+                        <field name="CONDITION">ne</field>
+                        <field name="ACK_CONDITION">false</field>
+                        <statement name="STATEMENT">
+                          <block type="controls_if" id="0Uc):u*#9#oyHu+}J^P#">
+                            <value name="IF0">
+                              <block type="time_compare" id="0IjWQom$5$nGT6,J_4Wk">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                <field name="OPTION">between</field>
+                                <field name="START_TIME">05:00</field>
+                                <field name="END_TIME">06:00</field>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="update" id="{0Gjp+EMevEEa!NBKW_s">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                <field name="WITH_DELAY">FALSE</field>
+                                <value name="VALUE">
+                                  <block type="convert_tonumber" id="-Ud`hgZoRj`J(0HKGdy.">
+                                    <value name="VALUE">
+                                      <block type="get_value" id=":iU;`[CAuiV)IpGhc{8U">
+                                        <field name="ATTR">val</field>
+                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_05-06</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="on" id="g?%~ec90)ls)H4E~K2dJ">
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_06-07</field>
+                            <field name="CONDITION">ne</field>
+                            <field name="ACK_CONDITION">false</field>
+                            <statement name="STATEMENT">
+                              <block type="controls_if" id="AQpLfAobckhC]Jt,[2v$">
+                                <value name="IF0">
+                                  <block type="time_compare" id="i)gVVaHRfmC*R=X{zE|;">
+                                    <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                    <field name="OPTION">between</field>
+                                    <field name="START_TIME">06:00</field>
+                                    <field name="END_TIME">07:00</field>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="update" id="Fsy`kA#4quYZvSt;^$dN">
+                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                    <field name="WITH_DELAY">FALSE</field>
+                                    <value name="VALUE">
+                                      <block type="convert_tonumber" id="X^FE;!qoNKCI4//!7~H=">
+                                        <value name="VALUE">
+                                          <block type="get_value" id="Pd^WC~bMOy.tX$|2=-Q2">
+                                            <field name="ATTR">val</field>
+                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_06-07</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="on" id="OiBYsy@9wN{,WX~Scn^S">
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_07-08</field>
+                                <field name="CONDITION">ne</field>
+                                <field name="ACK_CONDITION">false</field>
+                                <statement name="STATEMENT">
+                                  <block type="controls_if" id=".f+.K~$jHWe@Uw`Tgz3b">
+                                    <value name="IF0">
+                                      <block type="time_compare" id="f=MT+}L4uXza}dYk1cHD">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                        <field name="OPTION">between</field>
+                                        <field name="START_TIME">07:00</field>
+                                        <field name="END_TIME">08:00</field>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="update" id="FjiSV|kLv%t|9xFK4[~t">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                        <field name="WITH_DELAY">FALSE</field>
+                                        <value name="VALUE">
+                                          <block type="convert_tonumber" id="lM@so%H?sg`u69Z/AzYm">
+                                            <value name="VALUE">
+                                              <block type="get_value" id="f/a0QS}v]#vtR9(CO4-I">
+                                                <field name="ATTR">val</field>
+                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_07-08</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="on" id="j3sW|VsDBf:F8|h6b(Rx">
+                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_08-09</field>
+                                    <field name="CONDITION">ne</field>
+                                    <field name="ACK_CONDITION">false</field>
+                                    <statement name="STATEMENT">
+                                      <block type="controls_if" id="UT|6keOGf^kxRt4w-EDf">
+                                        <value name="IF0">
+                                          <block type="time_compare" id="jU{V9(?D}]fiv-VDM@zY">
+                                            <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                            <field name="OPTION">between</field>
+                                            <field name="START_TIME">08:00</field>
+                                            <field name="END_TIME">09:00</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="update" id="_3yEP,Q9To)Rt4G+EB6L">
+                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                            <field name="WITH_DELAY">FALSE</field>
+                                            <value name="VALUE">
+                                              <block type="convert_tonumber" id="cWb$]H1h!L7`7H3jBii$">
+                                                <value name="VALUE">
+                                                  <block type="get_value" id="eKWf^h+UJgwevfRsN{,@">
+                                                    <field name="ATTR">val</field>
+                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_08-09</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="on" id="U`nsk}TN%e4EL)/jgi/z">
+                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_09-10</field>
+                                        <field name="CONDITION">ne</field>
+                                        <field name="ACK_CONDITION">false</field>
+                                        <statement name="STATEMENT">
+                                          <block type="controls_if" id="e@X}_@gS]*.xp5Qu8*5@">
+                                            <value name="IF0">
+                                              <block type="time_compare" id="OeS$t_J5C(mCy;(JYlna">
+                                                <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                <field name="OPTION">between</field>
+                                                <field name="START_TIME">09:00</field>
+                                                <field name="END_TIME">10:00</field>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="update" id="MwLAjcR.-TR[:yrn4}LY">
+                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                <field name="WITH_DELAY">FALSE</field>
+                                                <value name="VALUE">
+                                                  <block type="convert_tonumber" id="U{e0om8,lEc1#Dk}/gdl">
+                                                    <value name="VALUE">
+                                                      <block type="get_value" id="yGP~SG7O+l6PO;K(fd!G">
+                                                        <field name="ATTR">val</field>
+                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_09-10</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="on" id="B@SEQ6*)go~ehOxUTgTk">
+                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_10-11</field>
+                                            <field name="CONDITION">ne</field>
+                                            <field name="ACK_CONDITION">false</field>
+                                            <statement name="STATEMENT">
+                                              <block type="controls_if" id="I@yPv)u?oraUyzM3eHHX">
+                                                <value name="IF0">
+                                                  <block type="time_compare" id="z)5OkVMtIsg)`e%Qa+72">
+                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                    <field name="OPTION">between</field>
+                                                    <field name="START_TIME">10:00</field>
+                                                    <field name="END_TIME">11:00</field>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="update" id="8wP||XjpddAfC.*V{cJ=">
+                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                    <field name="WITH_DELAY">FALSE</field>
+                                                    <value name="VALUE">
+                                                      <block type="convert_tonumber" id="kkh)sFaYaolu-iOL{kxN">
+                                                        <value name="VALUE">
+                                                          <block type="get_value" id="n)7ot]hb0C,MW}opU`Nu">
+                                                            <field name="ATTR">val</field>
+                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_10-11</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="on" id="UY?:7Mh,lIQAORf(3U-(">
+                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_11-12</field>
+                                                <field name="CONDITION">ne</field>
+                                                <field name="ACK_CONDITION">false</field>
+                                                <statement name="STATEMENT">
+                                                  <block type="controls_if" id="Cm)vZg?lFYDTSdz@x8dp">
+                                                    <value name="IF0">
+                                                      <block type="time_compare" id="6_uryjQc7A_(]HtZf~a)">
+                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                        <field name="OPTION">between</field>
+                                                        <field name="START_TIME">11:00</field>
+                                                        <field name="END_TIME">12:00</field>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block type="update" id="5#?mmsrGEt*#voa}=BF.">
+                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                        <field name="WITH_DELAY">FALSE</field>
+                                                        <value name="VALUE">
+                                                          <block type="convert_tonumber" id="=5r1z)=cd1eh;LNex9Yt">
+                                                            <value name="VALUE">
+                                                              <block type="get_value" id="rwH6+~7/Y`|VxqXt:YU;">
+                                                                <field name="ATTR">val</field>
+                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_11-12</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="on" id="7PMQR~G}=j%u|lV^c=u[">
+                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_12-13</field>
+                                                    <field name="CONDITION">ne</field>
+                                                    <field name="ACK_CONDITION">false</field>
+                                                    <statement name="STATEMENT">
+                                                      <block type="controls_if" id="3o+tlta}{H+]oV:^Hl:{">
+                                                        <value name="IF0">
+                                                          <block type="time_compare" id="IpKk5%cPHJ-cn|Usn-aH">
+                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                            <field name="OPTION">between</field>
+                                                            <field name="START_TIME">12:00</field>
+                                                            <field name="END_TIME">13:00</field>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="update" id=")47J$^t[M38_uarv$w4;">
+                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                            <field name="WITH_DELAY">FALSE</field>
+                                                            <value name="VALUE">
+                                                              <block type="convert_tonumber" id="Dde=l3/HjGA|~9v+=esQ">
+                                                                <value name="VALUE">
+                                                                  <block type="get_value" id="r!F3O3UJ`W!wo_+F:6)O">
+                                                                    <field name="ATTR">val</field>
+                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_12-13</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="on" id="zs#((SfcEXGU6*0Er#E[">
+                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_13-14</field>
+                                                        <field name="CONDITION">ne</field>
+                                                        <field name="ACK_CONDITION">false</field>
+                                                        <statement name="STATEMENT">
+                                                          <block type="controls_if" id="]OlX+7+%BT*fmOr6ffYw">
+                                                            <value name="IF0">
+                                                              <block type="time_compare" id="vJYZxUr1isIq#/TofiK*">
+                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                <field name="OPTION">between</field>
+                                                                <field name="START_TIME">13:00</field>
+                                                                <field name="END_TIME">14:00</field>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block type="update" id="fj}x^iCMwF`i6Q9E`b1i">
+                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                <field name="WITH_DELAY">FALSE</field>
+                                                                <value name="VALUE">
+                                                                  <block type="convert_tonumber" id="xVQLa1o|Z]ck-K15H.*,">
+                                                                    <value name="VALUE">
+                                                                      <block type="get_value" id="EM`ys^H,v#q#Q#QnRL^p">
+                                                                        <field name="ATTR">val</field>
+                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_13-14</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </statement>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="on" id="=mso#zXE:Eacr|xks*Kf">
+                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_14-15</field>
+                                                            <field name="CONDITION">ne</field>
+                                                            <field name="ACK_CONDITION">false</field>
+                                                            <statement name="STATEMENT">
+                                                              <block type="controls_if" id="+N+;W_XMSqrT%#9d44uv">
+                                                                <value name="IF0">
+                                                                  <block type="time_compare" id="FKAfux-7^Xrl7!%IJxK^">
+                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                    <field name="OPTION">between</field>
+                                                                    <field name="START_TIME">14:00</field>
+                                                                    <field name="END_TIME">15:00</field>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="update" id="2B4NHZ,8Q,+.lg)=;.Ll">
+                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                    <field name="WITH_DELAY">FALSE</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="convert_tonumber" id="*cW*L/=w~v%z5L^isj-@">
+                                                                        <value name="VALUE">
+                                                                          <block type="get_value" id="8AzZi[K:c)9jG9J6?Gq+">
+                                                                            <field name="ATTR">val</field>
+                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_14-15</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="on" id="!xx^@uJ1f$NKOPn77W]O">
+                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_15-16</field>
+                                                                <field name="CONDITION">ne</field>
+                                                                <field name="ACK_CONDITION">false</field>
+                                                                <statement name="STATEMENT">
+                                                                  <block type="controls_if" id="}$8QKkvOu``^|hLsfZ~b">
+                                                                    <value name="IF0">
+                                                                      <block type="time_compare" id="quvZrcu:kWd)q1x=p;$P">
+                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                        <field name="OPTION">between</field>
+                                                                        <field name="START_TIME">15:00</field>
+                                                                        <field name="END_TIME">16:00</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <statement name="DO0">
+                                                                      <block type="update" id="XWdLJY@C9d`kf#_bD=)Y">
+                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                        <field name="WITH_DELAY">FALSE</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="convert_tonumber" id="Dh2zw5*VmXTBlciZ$cuB">
+                                                                            <value name="VALUE">
+                                                                              <block type="get_value" id="a%9j~)i+1rm,8UpY|~Bc">
+                                                                                <field name="ATTR">val</field>
+                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_15-16</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </statement>
+                                                                  </block>
+                                                                </statement>
+                                                                <next>
+                                                                  <block type="on" id="D%cW9aU]k[{J:$],Pl/F">
+                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_16-17</field>
+                                                                    <field name="CONDITION">ne</field>
+                                                                    <field name="ACK_CONDITION">false</field>
+                                                                    <statement name="STATEMENT">
+                                                                      <block type="controls_if" id="xl[$REr;OcmZCuaOEZJw">
+                                                                        <value name="IF0">
+                                                                          <block type="time_compare" id="0{g2wxY~Msg/_O^Hl,fk">
+                                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                            <field name="OPTION">between</field>
+                                                                            <field name="START_TIME">16:00</field>
+                                                                            <field name="END_TIME">17:00</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <statement name="DO0">
+                                                                          <block type="update" id="q3_[{scSofhfW.FN3BCF">
+                                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                            <field name="WITH_DELAY">FALSE</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="convert_tonumber" id="1$:~EPc]*G:DQE3M%_A:">
+                                                                                <value name="VALUE">
+                                                                                  <block type="get_value" id="xrn/nVAcrroE?wM#+U@j">
+                                                                                    <field name="ATTR">val</field>
+                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_16-17</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </statement>
+                                                                      </block>
+                                                                    </statement>
+                                                                    <next>
+                                                                      <block type="on" id="j@ZC4;]v8G!KQ}]]CIka">
+                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_17-18</field>
+                                                                        <field name="CONDITION">ne</field>
+                                                                        <field name="ACK_CONDITION">false</field>
+                                                                        <statement name="STATEMENT">
+                                                                          <block type="controls_if" id="sdUa9q(UqHUUmG0I.Ris">
+                                                                            <value name="IF0">
+                                                                              <block type="time_compare" id="a4D~FUoK*r}@qgr!NHa~">
+                                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                                <field name="OPTION">between</field>
+                                                                                <field name="START_TIME">17:00</field>
+                                                                                <field name="END_TIME">18:00</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="update" id="wE6Q5som@l#w`.^$K5ut">
+                                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                <field name="WITH_DELAY">FALSE</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="convert_tonumber" id="~87k41|]{T29!X,rTsCx">
+                                                                                    <value name="VALUE">
+                                                                                      <block type="get_value" id="}7B{h*.G2gJju)MKSqO}">
+                                                                                        <field name="ATTR">val</field>
+                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_17-18</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                          </block>
+                                                                        </statement>
+                                                                        <next>
+                                                                          <block type="on" id="h7+nV:k3hYCWS^v!N0,2">
+                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_18-19</field>
+                                                                            <field name="CONDITION">ne</field>
+                                                                            <field name="ACK_CONDITION">false</field>
+                                                                            <statement name="STATEMENT">
+                                                                              <block type="controls_if" id="~8{TM#l$4]6orX6tBnIp">
+                                                                                <value name="IF0">
+                                                                                  <block type="time_compare" id="yKnMHiwP^hyCKXwXv`{;">
+                                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                                    <field name="OPTION">between</field>
+                                                                                    <field name="START_TIME">18:00</field>
+                                                                                    <field name="END_TIME">19:00</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <statement name="DO0">
+                                                                                  <block type="update" id=".R]H|3l$YxLp.*;x2(a}">
+                                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                    <field name="WITH_DELAY">FALSE</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="convert_tonumber" id="#BMI|;:bxGJXUh%i[w(-">
+                                                                                        <value name="VALUE">
+                                                                                          <block type="get_value" id="([C{b-2=]j4b{*gvdslU">
+                                                                                            <field name="ATTR">val</field>
+                                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_18-19</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </statement>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <next>
+                                                                              <block type="on" id="|j=6rBD#2d_[R^Cpjt%G">
+                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_19-20</field>
+                                                                                <field name="CONDITION">ne</field>
+                                                                                <field name="ACK_CONDITION">false</field>
+                                                                                <statement name="STATEMENT">
+                                                                                  <block type="controls_if" id="tf?FKGl|gEss8*xV!([F">
+                                                                                    <value name="IF0">
+                                                                                      <block type="time_compare" id="VNyhZLI~|!(dDr!kh!Mr">
+                                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                                        <field name="OPTION">between</field>
+                                                                                        <field name="START_TIME">19:00</field>
+                                                                                        <field name="END_TIME">20:00</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <statement name="DO0">
+                                                                                      <block type="update" id="HO|yN.Ai2EM/K+[XHl}`">
+                                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                        <field name="WITH_DELAY">FALSE</field>
+                                                                                        <value name="VALUE">
+                                                                                          <block type="convert_tonumber" id="8tD6(E)pW{.yI5oXCbqA">
+                                                                                            <value name="VALUE">
+                                                                                              <block type="get_value" id="(t!!u`mhQ#bG`54^Hq03">
+                                                                                                <field name="ATTR">val</field>
+                                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_19-20</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                  </block>
+                                                                                </statement>
+                                                                                <next>
+                                                                                  <block type="on" id="1bPN2~cN*ouGZQ,kz_P9">
+                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_20-21</field>
+                                                                                    <field name="CONDITION">ne</field>
+                                                                                    <field name="ACK_CONDITION">false</field>
+                                                                                    <statement name="STATEMENT">
+                                                                                      <block type="controls_if" id="`Y%K13$c9J^.!dRRfCo=">
+                                                                                        <value name="IF0">
+                                                                                          <block type="time_compare" id="FDcet$Sd,-PDF)Or0uT/">
+                                                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                                            <field name="OPTION">between</field>
+                                                                                            <field name="START_TIME">20:00</field>
+                                                                                            <field name="END_TIME">21:00</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <statement name="DO0">
+                                                                                          <block type="update" id="]@|{9(|S68D1baNOnc?.">
+                                                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                            <field name="WITH_DELAY">FALSE</field>
+                                                                                            <value name="VALUE">
+                                                                                              <block type="convert_tonumber" id="3Yj?cHmt25I293jhBA:`">
+                                                                                                <value name="VALUE">
+                                                                                                  <block type="get_value" id="qwL1m5g|D{F+2}B-.9b]">
+                                                                                                    <field name="ATTR">val</field>
+                                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_20-21</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </statement>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                    <next>
+                                                                                      <block type="on" id="8VWnKQKm@}t%Sy[Uc`KD">
+                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_21-22</field>
+                                                                                        <field name="CONDITION">ne</field>
+                                                                                        <field name="ACK_CONDITION">false</field>
+                                                                                        <statement name="STATEMENT">
+                                                                                          <block type="controls_if" id="=2+e4KBCdpe0TKkMW!na">
+                                                                                            <value name="IF0">
+                                                                                              <block type="time_compare" id="Ah!U,,Tik5*lkooJej@8">
+                                                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                                                <field name="OPTION">between</field>
+                                                                                                <field name="START_TIME">21:00</field>
+                                                                                                <field name="END_TIME">22:00</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <statement name="DO0">
+                                                                                              <block type="update" id="4[*gPOkRTO0.[q|:{gWF">
+                                                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                                <field name="WITH_DELAY">FALSE</field>
+                                                                                                <value name="VALUE">
+                                                                                                  <block type="convert_tonumber" id="J)h.:}396neUL@,%.`]=">
+                                                                                                    <value name="VALUE">
+                                                                                                      <block type="get_value" id="RA}iom~*V`M@a|hP=?{U">
+                                                                                                        <field name="ATTR">val</field>
+                                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_21-22</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                          </block>
+                                                                                        </statement>
+                                                                                        <next>
+                                                                                          <block type="on" id="#p}K;1s]Y]R}k%$wAC{1">
+                                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_22-23</field>
+                                                                                            <field name="CONDITION">ne</field>
+                                                                                            <field name="ACK_CONDITION">false</field>
+                                                                                            <statement name="STATEMENT">
+                                                                                              <block type="controls_if" id="-`F%R]M!KEOK)HRvfnQ~">
+                                                                                                <value name="IF0">
+                                                                                                  <block type="time_compare" id="c,l]+:^P{NVLw)E2KWi,">
+                                                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                                                    <field name="OPTION">between</field>
+                                                                                                    <field name="START_TIME">22:00</field>
+                                                                                                    <field name="END_TIME">23:00</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <statement name="DO0">
+                                                                                                  <block type="update" id="y9Qgw_qW}n/.!5,yPp0F">
+                                                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                                    <field name="WITH_DELAY">FALSE</field>
+                                                                                                    <value name="VALUE">
+                                                                                                      <block type="convert_tonumber" id="J|fNyGlOE8#ZiLBCby)Q">
+                                                                                                        <value name="VALUE">
+                                                                                                          <block type="get_value" id="ycq=KN(KuT}hzK*ujVkf">
+                                                                                                            <field name="ATTR">val</field>
+                                                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_22-23</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                            <next>
+                                                                                              <block type="on" id="*[##G~3DNb#k9P~TiP7`">
+                                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_23-00</field>
+                                                                                                <field name="CONDITION">ne</field>
+                                                                                                <field name="ACK_CONDITION">false</field>
+                                                                                                <statement name="STATEMENT">
+                                                                                                  <block type="controls_if" id="9I5UO?30by-k(I$x`cR9">
+                                                                                                    <value name="IF0">
+                                                                                                      <block type="time_compare" id="A2x7q_Z)o[YGZ_;*y`j^">
+                                                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" end_time="true"></mutation>
+                                                                                                        <field name="OPTION">between</field>
+                                                                                                        <field name="START_TIME">23:00</field>
+                                                                                                        <field name="END_TIME">00:00</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <statement name="DO0">
+                                                                                                      <block type="update" id="=4}yc8?,FJ^]WdHMfM;O">
+                                                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                                        <field name="WITH_DELAY">FALSE</field>
+                                                                                                        <value name="VALUE">
+                                                                                                          <block type="convert_tonumber" id="kx1]i)VGi5Ve;[G6}SCk">
+                                                                                                            <value name="VALUE">
+                                                                                                              <block type="get_value" id="O7DxQqu0;*|rCkPHsH^O">
+                                                                                                                <field name="ATTR">val</field>
+                                                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_23-00</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </statement>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="schedule" id="1x8RUfh-1F?rfccX_EKf" x="-1712" y="-887">
+    <field name="SCHEDULE">* 0 * * *</field>
+    <statement name="STATEMENT">
+      <block type="update" id="4OYB0xaUJdgFHb[R$0*$">
+        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+        <field name="WITH_DELAY">FALSE</field>
+        <value name="VALUE">
+          <block type="convert_tonumber" id="/TS-?Ph2+l9%0`B,4gVd">
+            <value name="VALUE">
+              <block type="get_value" id="D.R$k1!.^l-rjK$G!mE+">
+                <field name="ATTR">val</field>
+                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_00-01</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="schedule" id="LA5@4L$8#j_a6#FzxC)8">
+        <field name="SCHEDULE">* 1 * * *</field>
+        <statement name="STATEMENT">
+          <block type="update" id="G+;GCa%$o@hL(N0!bwi8">
+            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+            <field name="WITH_DELAY">FALSE</field>
+            <value name="VALUE">
+              <block type="convert_tonumber" id="]e?Q0}-qV#yc?TLe_nHR">
+                <value name="VALUE">
+                  <block type="get_value" id="Wx%atwfXtpyjiD++iJbm">
+                    <field name="ATTR">val</field>
+                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_01-02</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="schedule" id=":bJtm1I1S2?z|(6]TdA}">
+            <field name="SCHEDULE">* 2 * * *</field>
+            <statement name="STATEMENT">
+              <block type="update" id=")5Vp1gDN!Bd1b}@Ew%6K">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                <field name="WITH_DELAY">FALSE</field>
+                <value name="VALUE">
+                  <block type="convert_tonumber" id=",V7zUDggAV5h:le{`U=#">
+                    <value name="VALUE">
+                      <block type="get_value" id="Vb@P[z2dCn-TESzp9K,*">
+                        <field name="ATTR">val</field>
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_02-03</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="schedule" id="?7p:rer7gI!IvROlkG)/">
+                <field name="SCHEDULE">* 3 * * *</field>
+                <statement name="STATEMENT">
+                  <block type="update" id="/s4mw=:vO`Zscsc6J$K5">
+                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                    <field name="WITH_DELAY">FALSE</field>
+                    <value name="VALUE">
+                      <block type="convert_tonumber" id="zPa%1M;`_yUOAoph+S6H">
+                        <value name="VALUE">
+                          <block type="get_value" id="VP^w[WW]C9rSFy]3S3]U">
+                            <field name="ATTR">val</field>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_03-04</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="schedule" id="S4%4%AJaTY~.ML}%6URs">
+                    <field name="SCHEDULE">* 4 * * *</field>
+                    <statement name="STATEMENT">
+                      <block type="update" id="Xne}En,QS1*w$2E$!X_f">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                        <field name="WITH_DELAY">FALSE</field>
+                        <value name="VALUE">
+                          <block type="convert_tonumber" id="y%ivv}:sE!+X6*p3eLsh">
+                            <value name="VALUE">
+                              <block type="get_value" id="+!l0h!z]Q1a}2z81#}6R">
+                                <field name="ATTR">val</field>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_04-05</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="schedule" id="uvyuj3uKcwjW3FjFq9AB">
+                        <field name="SCHEDULE">* 5 * * *</field>
+                        <statement name="STATEMENT">
+                          <block type="update" id="~1}:LQB9}oH3-SovSb;4">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                            <field name="WITH_DELAY">FALSE</field>
+                            <value name="VALUE">
+                              <block type="convert_tonumber" id="xPafPk0-c9XUY{M8Vl(0">
+                                <value name="VALUE">
+                                  <block type="get_value" id="H~k%uH959i|aOni/dX-Z">
+                                    <field name="ATTR">val</field>
+                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_05-06</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="schedule" id="Q)|D3~fRPn;?r$:`x@Oj">
+                            <field name="SCHEDULE">* 6 * * *</field>
+                            <statement name="STATEMENT">
+                              <block type="update" id="Qz8c6K[uqu-SN9%U)$TL">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                <field name="WITH_DELAY">FALSE</field>
+                                <value name="VALUE">
+                                  <block type="convert_tonumber" id="PQR^|9mpyPtMjBY?Vq*d">
+                                    <value name="VALUE">
+                                      <block type="get_value" id="Zp%Wz8-/3Zg?hJ%_k^I|">
+                                        <field name="ATTR">val</field>
+                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_06-07</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="schedule" id="NiWH5KS_%#@Y$^;{5s8:">
+                                <field name="SCHEDULE">* 7 * * *</field>
+                                <statement name="STATEMENT">
+                                  <block type="update" id="IYvwRhUQ6YmX#~Zx^KIM">
+                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                    <field name="WITH_DELAY">FALSE</field>
+                                    <value name="VALUE">
+                                      <block type="convert_tonumber" id="Q%H(ryB+@1U|@cA7wK+H">
+                                        <value name="VALUE">
+                                          <block type="get_value" id="61fAd8mzY|wLOl-/k6Zs">
+                                            <field name="ATTR">val</field>
+                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_07-08</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="schedule" id="F1F(3]4?9CgmkB^n=uS,">
+                                    <field name="SCHEDULE">* 8 * * *</field>
+                                    <statement name="STATEMENT">
+                                      <block type="update" id="8$odYudGH#Max;{O~{L;">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                        <field name="WITH_DELAY">FALSE</field>
+                                        <value name="VALUE">
+                                          <block type="convert_tonumber" id="[Fy!p9)FaUDFk9h_Zm|E">
+                                            <value name="VALUE">
+                                              <block type="get_value" id=".Rh!*Mm@5$f%~rK6*TAB">
+                                                <field name="ATTR">val</field>
+                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_08-09</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="schedule" id=")3mUXj+%1|3zmqE~:|*9">
+                                        <field name="SCHEDULE">* 9 * * *</field>
+                                        <statement name="STATEMENT">
+                                          <block type="update" id=",W)7+N!S%(}Ua*{:-KO}">
+                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                            <field name="WITH_DELAY">FALSE</field>
+                                            <value name="VALUE">
+                                              <block type="convert_tonumber" id="r+1U7U=iC2VT`]3WpU/^">
+                                                <value name="VALUE">
+                                                  <block type="get_value" id="S^mtf7*{QJmy^@sk|Zj$">
+                                                    <field name="ATTR">val</field>
+                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_09-10</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="schedule" id="1stI5Au@u/b[KtK[,dhi">
+                                            <field name="SCHEDULE">* 10 * * *</field>
+                                            <statement name="STATEMENT">
+                                              <block type="update" id=".IeKtA{+{@H}Gb_!cH2L">
+                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                <field name="WITH_DELAY">FALSE</field>
+                                                <value name="VALUE">
+                                                  <block type="convert_tonumber" id="^B#zSO3#g?K~gu4QG]Tb">
+                                                    <value name="VALUE">
+                                                      <block type="get_value" id="/K)_kwQ}2XAuriRN:D.=">
+                                                        <field name="ATTR">val</field>
+                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_10-11</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="schedule" id="aC!_l%,3`CHC7esRG+g+">
+                                                <field name="SCHEDULE">* 11 * * *</field>
+                                                <statement name="STATEMENT">
+                                                  <block type="update" id="qKke@fS:46sf-bc:OXmt">
+                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                    <field name="WITH_DELAY">FALSE</field>
+                                                    <value name="VALUE">
+                                                      <block type="convert_tonumber" id="fd([Z.n*GaEr[U5F(8.v">
+                                                        <value name="VALUE">
+                                                          <block type="get_value" id="DXP]P6|wNk(nNgnR3z.[">
+                                                            <field name="ATTR">val</field>
+                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_11-12</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="schedule" id="eaj,g}R7g4[e8|-Sb|Td">
+                                                    <field name="SCHEDULE">* 12 * * *</field>
+                                                    <statement name="STATEMENT">
+                                                      <block type="update" id="vdJ^^(!;wvqPO,d-uN0j">
+                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                        <field name="WITH_DELAY">FALSE</field>
+                                                        <value name="VALUE">
+                                                          <block type="convert_tonumber" id="^fiu;HtcjvMU1F?AMNbZ">
+                                                            <value name="VALUE">
+                                                              <block type="get_value" id="F{~Tu@h{y3h*3+Nf6Q9e">
+                                                                <field name="ATTR">val</field>
+                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_12-13</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="schedule" id="j-*zc?sZU#49|Yju7Sic">
+                                                        <field name="SCHEDULE">* 13 * * *</field>
+                                                        <statement name="STATEMENT">
+                                                          <block type="update" id="wuZ-^6Fwolf!nl=7qSKp">
+                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                            <field name="WITH_DELAY">FALSE</field>
+                                                            <value name="VALUE">
+                                                              <block type="convert_tonumber" id="%~mEn:W]F^][.tZi12PR">
+                                                                <value name="VALUE">
+                                                                  <block type="get_value" id="6~rss-sX1j#pW!OP(]x^">
+                                                                    <field name="ATTR">val</field>
+                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_13-14</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="schedule" id="`_j5D^A=x]A}I{55?wte">
+                                                            <field name="SCHEDULE">* 14 * * *</field>
+                                                            <statement name="STATEMENT">
+                                                              <block type="update" id="01nL^RAm:_ivyMF;/Lu2">
+                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                <field name="WITH_DELAY">FALSE</field>
+                                                                <value name="VALUE">
+                                                                  <block type="convert_tonumber" id="tY-@xQ#o~h9NggFpo4@`">
+                                                                    <value name="VALUE">
+                                                                      <block type="get_value" id="Pd|{j%|dQ*/+1$OmAL(m">
+                                                                        <field name="ATTR">val</field>
+                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_14-15</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="schedule" id="V0!}N[hzf9m/YO$vYs!?">
+                                                                <field name="SCHEDULE">* 15 * * *</field>
+                                                                <statement name="STATEMENT">
+                                                                  <block type="update" id="_UzBIf2uDyunEV)|:UB?">
+                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                    <field name="WITH_DELAY">FALSE</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="convert_tonumber" id="QNuh0%GA^z.a_N1]Gk-)">
+                                                                        <value name="VALUE">
+                                                                          <block type="get_value" id="XP_B^@)/MIh=({9:`*V1">
+                                                                            <field name="ATTR">val</field>
+                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_15-16</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                                <next>
+                                                                  <block type="schedule" id="}iTp)=o:J4P;o}Fgkm.?">
+                                                                    <field name="SCHEDULE">* 16 * * *</field>
+                                                                    <statement name="STATEMENT">
+                                                                      <block type="update" id="lj3:UYjyp0,K4QQ}f4gj">
+                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                        <field name="WITH_DELAY">FALSE</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="convert_tonumber" id="rHgkU,QFT_uXtWsgxvwO">
+                                                                            <value name="VALUE">
+                                                                              <block type="get_value" id="ScW(cT50^pe{Gpa!A]U^">
+                                                                                <field name="ATTR">val</field>
+                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_16-17</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </statement>
+                                                                    <next>
+                                                                      <block type="schedule" id="PPi8^2fIH`:ba+,{PIyc">
+                                                                        <field name="SCHEDULE">* 17 * * *</field>
+                                                                        <statement name="STATEMENT">
+                                                                          <block type="update" id="C3d]|u7#x_d9u+*|akLL">
+                                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                            <field name="WITH_DELAY">FALSE</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="convert_tonumber" id="6~|w:{$K:?*^l[Z)y9Xk">
+                                                                                <value name="VALUE">
+                                                                                  <block type="get_value" id="Lm:SyNe#LzD]es^a{S%!">
+                                                                                    <field name="ATTR">val</field>
+                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_17-18</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </statement>
+                                                                        <next>
+                                                                          <block type="schedule" id="*^)Tqo(Vl4mU?{jsbUzg">
+                                                                            <field name="SCHEDULE">* 18 * * *</field>
+                                                                            <statement name="STATEMENT">
+                                                                              <block type="update" id="GAF*$KNW-Fs3o}b^(Y~F">
+                                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                <field name="WITH_DELAY">FALSE</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="convert_tonumber" id="a^a1uq4Z7/3HKflDRFl~">
+                                                                                    <value name="VALUE">
+                                                                                      <block type="get_value" id="$r`O/ahL|Dr{+2hOIP4A">
+                                                                                        <field name="ATTR">val</field>
+                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_18-19</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <next>
+                                                                              <block type="schedule" id=")/H.s?`[UNj(*9Q61umc">
+                                                                                <field name="SCHEDULE">* 19 * * *</field>
+                                                                                <statement name="STATEMENT">
+                                                                                  <block type="update" id="LmX?aGwj7#Rp(]K/q~XS">
+                                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                    <field name="WITH_DELAY">FALSE</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="convert_tonumber" id="lI@|;c[/mTkf^oBL,ZXV">
+                                                                                        <value name="VALUE">
+                                                                                          <block type="get_value" id=";de#Aj-L*dl9mo){wuvb">
+                                                                                            <field name="ATTR">val</field>
+                                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_19-20</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </statement>
+                                                                                <next>
+                                                                                  <block type="schedule" id="u}.Bq346;IQu.1w~j-ao">
+                                                                                    <field name="SCHEDULE">* 20 * * *</field>
+                                                                                    <statement name="STATEMENT">
+                                                                                      <block type="update" id="~.pq5fs~(,(Dm~PwPXly">
+                                                                                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                        <field name="WITH_DELAY">FALSE</field>
+                                                                                        <value name="VALUE">
+                                                                                          <block type="convert_tonumber" id="Z5+Q[LD.N-|qQm;Uu[@*">
+                                                                                            <value name="VALUE">
+                                                                                              <block type="get_value" id="v7#)dWTrm1`Q6/C)7~R-">
+                                                                                                <field name="ATTR">val</field>
+                                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_20-21</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                    <next>
+                                                                                      <block type="schedule" id="@I,^AT#kV_,Rehj8T4+P">
+                                                                                        <field name="SCHEDULE">* 21 * * *</field>
+                                                                                        <statement name="STATEMENT">
+                                                                                          <block type="update" id="#yaDMs8AaHeDi=s+Ui`C">
+                                                                                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                            <field name="WITH_DELAY">FALSE</field>
+                                                                                            <value name="VALUE">
+                                                                                              <block type="convert_tonumber" id="m8K5vfB|aC3r|=4|Z3DC">
+                                                                                                <value name="VALUE">
+                                                                                                  <block type="get_value" id="_(mU:4ABgw4x7H5?X|D^">
+                                                                                                    <field name="ATTR">val</field>
+                                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_21-22</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </statement>
+                                                                                        <next>
+                                                                                          <block type="schedule" id="MBQ(*dma~rx5.B=Xzd`:">
+                                                                                            <field name="SCHEDULE">* 22 * * *</field>
+                                                                                            <statement name="STATEMENT">
+                                                                                              <block type="update" id=",WqXcTZ9r}yIr|daj]El">
+                                                                                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                                <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                                <field name="WITH_DELAY">FALSE</field>
+                                                                                                <value name="VALUE">
+                                                                                                  <block type="convert_tonumber" id="/C3k====]G)0n?jOt3Su">
+                                                                                                    <value name="VALUE">
+                                                                                                      <block type="get_value" id="Sl`!H_1`IkLHkj^ubx/Y">
+                                                                                                        <field name="ATTR">val</field>
+                                                                                                        <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_22-23</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                            <next>
+                                                                                              <block type="schedule" id="ZLk|2%?8HZ~.ro%Jkxhb">
+                                                                                                <field name="SCHEDULE">* 23 * * *</field>
+                                                                                                <statement name="STATEMENT">
+                                                                                                  <block type="update" id="L}igvBPEdZCSxVr+2F#o">
+                                                                                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                                                                                    <field name="OID">0_userdata.0.E3DC_Grid_Load.Current_Load</field>
+                                                                                                    <field name="WITH_DELAY">FALSE</field>
+                                                                                                    <value name="VALUE">
+                                                                                                      <block type="convert_tonumber" id="?WP8Ac[W.M`k*,HO+0sa">
+                                                                                                        <value name="VALUE">
+                                                                                                          <block type="get_value" id="#8*YRBS^}rd.B3bf_+c)">
+                                                                                                            <field name="ATTR">val</field>
+                                                                                                            <field name="OID">0_userdata.0.E3DC_Grid_Load.Today_23-00</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
