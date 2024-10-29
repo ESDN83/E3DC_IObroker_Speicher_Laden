@@ -1,0 +1,1367 @@
+{
+  "0_userdata.0.E3DC_Grid_Load": {
+    "common": {
+      "name": "E3DC_Grid_Load"
+    },
+    "type": "folder",
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695648549899,
+    "_id": "0_userdata.0.E3DC_Grid_Load",
+    "acl": {
+      "object": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    }
+  },
+  "0_userdata.0.E3DC_Grid_Load.CONSUMPTION_24H": {
+    "common": {
+      "name": "CONSUMPTION_24H",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1699361884198,
+    "_id": "0_userdata.0.E3DC_Grid_Load.CONSUMPTION_24H",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 1082,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Current_Load": {
+    "common": {
+      "name": "Current_Load",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1696938625333,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Current_Load",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Current_Load_executed": {
+    "common": {
+      "name": "Current_Load_executed",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "boolean",
+      "read": true,
+      "write": true,
+      "def": false
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1697122219641,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Current_Load_executed",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": false,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Current_Load_executed_last_val": {
+    "common": {
+      "name": "Current_Load_executed_last_val",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1697124054241,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Current_Load_executed_last_val",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.PrognoseBerechnungHeute": {
+    "common": {
+      "name": "PrognoseBerechnungHeute",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1699531163843,
+    "_id": "0_userdata.0.E3DC_Grid_Load.PrognoseBerechnungHeute",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 39.6495,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.PrognoseBerechnungMorgen": {
+    "common": {
+      "name": "PrognoseBerechnungMorgen",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1697159317949,
+    "_id": "0_userdata.0.E3DC_Grid_Load.PrognoseBerechnungMorgen",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 33.678000000000004,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_00-01": {
+    "common": {
+      "name": "Today_00-01",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695716277760,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_00-01",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_01-02": {
+    "common": {
+      "name": "Today_01-02",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695712929898,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_01-02",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_02-03": {
+    "common": {
+      "name": "Today_02-03",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695712947181,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_02-03",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_03-04": {
+    "common": {
+      "name": "Today_03-04",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713024194,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_03-04",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_04-05": {
+    "common": {
+      "name": "Today_04-05",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713054648,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_04-05",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_05-06": {
+    "common": {
+      "name": "Today_05-06",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713071164,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_05-06",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_06-07": {
+    "common": {
+      "name": "Today_06-07",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713086918,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_06-07",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_07-08": {
+    "common": {
+      "name": "Today_07-08",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713099086,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_07-08",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_08-09": {
+    "common": {
+      "name": "Today_08-09",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713113073,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_08-09",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_09-10": {
+    "common": {
+      "name": "Today_09-10",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713127485,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_09-10",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_10-11": {
+    "common": {
+      "name": "Today_10-11",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713143736,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_10-11",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_11-12": {
+    "common": {
+      "name": "Today_11-12",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713158888,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_11-12",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_12-13": {
+    "common": {
+      "name": "Today_12-13",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713169794,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_12-13",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_13-14": {
+    "common": {
+      "name": "Today_13-14",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713190057,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_13-14",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_14-15": {
+    "common": {
+      "name": "Today_14-15",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713226096,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_14-15",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_15-16": {
+    "common": {
+      "name": "Today_15-16",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713209094,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_15-16",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_16-17": {
+    "common": {
+      "name": "Today_16-17",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713245173,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_16-17",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_17-18": {
+    "common": {
+      "name": "Today_17-18",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713257175,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_17-18",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_18-19": {
+    "common": {
+      "name": "Today_18-19",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713271622,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_18-19",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_19-20": {
+    "common": {
+      "name": "Today_19-20",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713281591,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_19-20",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_20-21": {
+    "common": {
+      "name": "Today_20-21",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713297743,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_20-21",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_21-22": {
+    "common": {
+      "name": "Today_21-22",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713313768,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_21-22",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_22-23": {
+    "common": {
+      "name": "Today_22-23",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713329606,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_22-23",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Today_23-00": {
+    "common": {
+      "name": "Today_23-00",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695713343916,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Today_23-00",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_00-01": {
+    "common": {
+      "name": "Tomorrow_00-01",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695728965813,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_00-01",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_01-02": {
+    "common": {
+      "name": "Tomorrow_01-02",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695728975069,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_01-02",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_02-03": {
+    "common": {
+      "name": "Tomorrow_02-03",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695728985710,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_02-03",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_03-04": {
+    "common": {
+      "name": "Tomorrow_03-04",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695728997914,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_03-04",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_04-05": {
+    "common": {
+      "name": "Tomorrow_04-05",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729007164,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_04-05",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_05-06": {
+    "common": {
+      "name": "Tomorrow_05-06",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729019657,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_05-06",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_06-07": {
+    "common": {
+      "name": "Tomorrow_06-07",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729034866,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_06-07",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_07-08": {
+    "common": {
+      "name": "Tomorrow_07-08",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729044683,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_07-08",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_08-09": {
+    "common": {
+      "name": "Tomorrow_08-09",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729055505,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_08-09",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_09-10": {
+    "common": {
+      "name": "Tomorrow_09-10",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729065300,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_09-10",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_10-11": {
+    "common": {
+      "name": "Tomorrow_10-11",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729073516,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_10-11",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_11-12": {
+    "common": {
+      "name": "Tomorrow_11-12",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729079801,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_11-12",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_12-13": {
+    "common": {
+      "name": "Tomorrow_12-13",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729103280,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_12-13",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_13-14": {
+    "common": {
+      "name": "Tomorrow_13-14",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729087020,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_13-14",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_14-15": {
+    "common": {
+      "name": "Tomorrow_14-15",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729115303,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_14-15",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_15-16": {
+    "common": {
+      "name": "Tomorrow_15-16",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729122536,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_15-16",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_16-17": {
+    "common": {
+      "name": "Tomorrow_16-17",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729129703,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_16-17",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_17-18": {
+    "common": {
+      "name": "Tomorrow_17-18",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729136754,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_17-18",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_18-19": {
+    "common": {
+      "name": "Tomorrow_18-19",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729144129,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_18-19",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_19-20": {
+    "common": {
+      "name": "Tomorrow_19-20",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729152508,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_19-20",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_20-21": {
+    "common": {
+      "name": "Tomorrow_20-21",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729164313,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_20-21",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_21-22": {
+    "common": {
+      "name": "Tomorrow_21-22",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729181790,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_21-22",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_22-23": {
+    "common": {
+      "name": "Tomorrow_22-23",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729189393,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_22-23",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.E3DC_Grid_Load.Tomorrow_23-00": {
+    "common": {
+      "name": "Tomorrow_23-00",
+      "desc": "Manuell erzeugt",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1695729196941,
+    "_id": "0_userdata.0.E3DC_Grid_Load.Tomorrow_23-00",
+    "acl": {
+      "object": 1636,
+      "state": 1636,
+      "owner": "system.user.admin",
+      "ownerGroup": "system.group.administrator"
+    },
+    "val": 0,
+    "ack": true
+  }
+}
